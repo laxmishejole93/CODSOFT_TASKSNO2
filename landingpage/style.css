@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fbff;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+    gap: 20px;
+}
+
+.logo {
+    color: #087f8c;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #172b4d;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #087f8c;
+}
+
+.nav-btn {
+    background: #087f8c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 75px 8%;
+    min-height: 520px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tagline {
+    color: #087f8c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #087f8c;
+}
+
+.description {
+    color: #65748b;
+    max-width: 470px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #087f8c;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #065e68;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid #087f8c;
+    color: #087f8c;
+}
+
+.secondary-btn:hover {
+    background: #e1f5f6;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 45px 8% 25px;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.about p {
+    color: #65748b;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 35px 8% 70px;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 0;
+    background: white;
+    padding: 30px 22px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #65748b;
+    font-size: 14px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    background: #e7f6f7;
+    padding: 55px 8%;
+}
+
+.contact p {
+    color: #65748b;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 6%;
+        gap: 30px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .services {
+        flex-direction: column;
+        padding: 25px 6% 45px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+}
